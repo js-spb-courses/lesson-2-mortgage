@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.loanform {
+                        display: flex;
+                        justify-content: center; }
+.calc-header {
+                        display: flex;
+                        justify-content: center; }
+                        
+
+        
+                </style>
+   
+</head>
+<body>
+    
+    <div class="calc-header"><h1>Калькулятор ипотеки</h1></div>
+<div class = loanform>
+
+    
+
+<form class="input">
+    <label>Тип программы</label><br>
+<select class="rate">
+
+    <option value="6.9">Господдержка(6.9%)</option>
+    <option value="0.5">МЕГАИпотека(0.5%)</option>
+    <option value="5.3">Рефинансирование(5.3%)</option>
+</select><br><br>
+Цена недвижимости<br>
+<input type="text" size="15" class="price"><br><br>
+
+Первоначальный взнос<br>
+<input type="text" size=15 class="first-payment" value=0><br><br>
+
+Срок кредита<br>
+<input type="text" size=15 class="period" value=1>
+</form>
+
+
+<div class = "outerresults">
+<div class="outerNumbers">
+
+Сумма кредита: 
+<div class="sum-outer"></div><br>
+Ежемесячный платеж:
+<div class="payment-outer"></div>
+<br>
+</div><br>
+Ставка:
+<div class="rate-outer"></div>
+</div>
+
+</div>
+
+
+<script src="mortgage.js"></script>
+</body>
+</html>
