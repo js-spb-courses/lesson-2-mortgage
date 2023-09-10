@@ -28,18 +28,9 @@ function getPayment() {
 
      else outerNumbers.style.color = 'black';
 
-    console.log (Number(result.toFixed()));
+
     return Number(result.toFixed());
 };
 
 
 
-let elements = document.querySelectorAll('form');
-
-for(i=0; i<elements.length; i++){
- elements[i].addEventListener("input", getPayment)
-
-  }
-
-
- 

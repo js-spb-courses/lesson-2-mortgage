@@ -13,10 +13,20 @@
 .calc-header {
                         display: flex;
                         justify-content: center; }
-                        
+.outerresults {
 
-        
-                </style>
+                        margin-left: 25px;
+    }                        
+
+ .inputs{
+                        margin-top: 10px;
+ }       
+ .sum-outer, .payment-outer, .rate-outer{
+                        margin-top: 30px;
+ }           
+            
+            
+            </style>
    
 </head>
 <body>
@@ -24,43 +34,44 @@
     <div class="calc-header"><h1>Калькулятор ипотеки</h1></div>
 <div class = loanform>
 
-    
-
-<form class="input">
-    <label>Тип программы</label><br>
-<select class="rate">
+   <form class="input">
+     <label>Тип программы</label><br>
+    <select class="rate">
 
     <option value="6.9">Господдержка(6.9%)</option>
     <option value="0.5">МЕГАИпотека(0.5%)</option>
     <option value="5.3">Рефинансирование(5.3%)</option>
-</select><br><br>
-Цена недвижимости<br>
-<input type="text" size="15" class="price"><br><br>
+    </select>
+<div class = "inputs">Цена недвижимости</div>
+<input type="number" class="price">
 
-Первоначальный взнос<br>
-<input type="text" size=15 class="first-payment" value=0><br><br>
+<div class = "inputs">Первоначальный взнос</div>
+<input type="number" class="first-payment" value=0>
 
-Срок кредита<br>
-<input type="text" size=15 class="period" value=1>
-</form>
+<div class = "inputs">Срок кредита</div>
+<input type="number" class="period" value=1>
+   </form>
 
 
-<div class = "outerresults">
-<div class="outerNumbers">
+    <div class = "outerresults">
+<div class = "outerNumbers">
 
 Сумма кредита: 
-<div class="sum-outer"></div><br>
+<div class="sum-outer"></div>
 Ежемесячный платеж:
 <div class="payment-outer"></div>
-<br>
-</div><br>
+
+  </div>
 Ставка:
 <div class="rate-outer"></div>
-</div>
+    </div>
 
 </div>
-
 
 <script src="mortgage.js"></script>
+<script src="script.js"></script>
+
+
+
 </body>
 </html>
